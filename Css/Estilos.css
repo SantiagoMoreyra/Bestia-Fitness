@@ -31,26 +31,28 @@ flex-wrap: wrap;
     background-color:red;
 }
 .header__logo{
-    display: inline;
+    display: flex;
+    justify-content: center;
     width: 50px;
     height: 50px;
+    margin: 16px;
 }
 .header__nav{
     display: flex;
     flex-wrap: wrap;
    background-color: gold;
-   margin: 10px;
-   padding: 10px;
+   padding: 5px;
 
  
 }
 .header__lista{
     display: inline;
     list-style: none;
-    padding: 10 16px;
+    padding:  16px;
 }
 
 .header__item{
+    font-size: 20px;
     display: inline;
     padding: 0 16px;
 
@@ -205,7 +207,8 @@ footer{
                          "indice mapa none";
 }
 .footer__indice ul li{
-    font-size: 16px;
+
+    font-size: 20px;
     grid-area: indice ;
     padding-bottom: 12px;
 
