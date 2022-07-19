@@ -33,12 +33,13 @@ flex-wrap: wrap;
 .header__logo{
     display: flex;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 90px;
+    height: 90px;
     margin: 16px;
 }
 .header__nav{
     display: flex;
+    margin: 10px;
     flex-wrap: wrap;
    background-color: gold;
    padding: 5px;
@@ -48,13 +49,13 @@ flex-wrap: wrap;
 .header__lista{
     display: inline;
     list-style: none;
-    padding:  16px;
+    padding:  30px;
 }
 
 .header__item{
     font-size: 20px;
     display: inline;
-    padding: 0 16px;
+    padding:  16px;
 
 }
 .header__item:hover{
@@ -64,6 +65,7 @@ flex-wrap: wrap;
 .header__item a{
     color: black;
     text-decoration: none;
+    
 }
 
 .header__logo{
@@ -97,6 +99,7 @@ flex-wrap: wrap;
 .main__principal{
     display: grid;
     background-image: url(../Resourses/jonathan-borba-zfPOelmDc-M-unsplash.png);
+    margin: 10px;
     height: 100vh;
     background-size: cover;
     background-position: center;
