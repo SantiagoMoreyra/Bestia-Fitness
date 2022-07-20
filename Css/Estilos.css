@@ -43,8 +43,13 @@ flex-wrap: wrap;
     flex-wrap: wrap;
    background-color: gold;
    padding: 5px;
-
- 
+}
+.color__navbar{
+    background-color: gold;
+}
+.tamaño{
+    width: 90px;
+    height: 90px;
 }
 .header__lista{
     display: inline;
@@ -334,6 +339,9 @@ button:hover{
     padding: 50px;
     border-radius: 10px;
     border: 1px solid black;
+    }
+    .carrousel__altura{
+      height: 500px;
     }
 
 /* MEDIA DE CELULAR */
