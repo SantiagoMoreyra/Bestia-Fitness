@@ -398,6 +398,13 @@ button:hover{
         width: 300px;
         height: 200px;
     }
+    .section{
+        border-radius: black solid 2px;
+        margin: 50px;
+        padding: 10px;
+        
+        
+    }
    
     .section__img{
         display: flex;
