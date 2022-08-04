@@ -263,6 +263,15 @@ footer {
     font-size: 15px;
     display: flex; } }
 
+.tamaño-h1 {
+  font-size: 3rem; }
+
+.tamaño-h2 {
+  font-size: 2rem; }
+
+.tamaño-h3 {
+  font-size: 1rem; }
+
 h1 {
   text-align: center;
   font-size: 30px;

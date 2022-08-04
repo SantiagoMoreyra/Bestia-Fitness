@@ -1,0 +1,11 @@
+$titulos:(
+    h1:3rem,
+    h2:2rem,
+    h3:1rem
+);
+
+@each $title, $size in $titulos {
+    .tamaño-#{$title} {
+        font-size: #{$size};
+    }
+}
