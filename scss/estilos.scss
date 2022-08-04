@@ -1,3 +1,8 @@
+@import "footer";
+@import "header";
+@import "mediaqueries";
+
+
 h1{
     text-align: center;
     font-size: 30px;
@@ -26,57 +31,6 @@ justify-content: center;
 .titulo-raro{
     color: cornflowerblue;
 }
-.header{
-    position: sticky;
-    top: 0px;
-    background-color:red;
-}
-.header__logo{
-    display: flex;
-    justify-content: center;
-    width: 90px;
-    height: 90px;
-    margin: 16px;
-}
-.header__nav{
-    display: flex;
-    margin: 10px;
-    flex-wrap: wrap;
-   background-color: gold;
-   padding: 5px;
-}
-.color__navbar{
-    background-color: gold;
-}
-.tamaño{
-    width: 90px;
-    height: 90px;
-}
-.header__lista{
-    display: inline;
-    list-style: none;
-    padding:  30px;
-}
-
-.header__item{
-    font-size: 20px;
-    display: inline;
-    padding:  16px;
-
-}
-.header__item:hover{
-    transform: scale(1.20, 1.20);
-    transition: all 0.5s;
-}
-.header__item a{
-    color: black;
-    text-decoration: none;
-    
-}
-
-.header__logo{
-    display: inline;
-}
 
 
 .imagen{
@@ -84,6 +38,13 @@ justify-content: center;
     height: auto;
     margin: 10px;
     padding: 10px;
+}
+.color__navbar{
+    background-color: gold;
+}
+.tamaño{
+    width: 90px;
+    height: 90px;
 }
 
 .modificacion{
@@ -123,8 +84,6 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
-
 }
 .main__boton{
     grid-column:2/3 ;
@@ -138,17 +97,7 @@ justify-content: center;
     
 }
 
-button{
-    text-decoration: none;
-    border-radius: 15px;
-    border: 2px solid black;
-    font-size: 20px;
-    
-}
-button:hover{
-    background-image: linear-gradient(to right, gold, yellow);
-    transform: translate(5px, 5px);
-}
+
 .main__tarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -167,6 +116,17 @@ button:hover{
     justify-content: center;
     align-items: center;
     
+}
+button{
+    text-decoration: none;
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 20px;
+    
+}
+button:hover{
+    background-image: linear-gradient(to right, gold, yellow);
+    transform: translate(5px, 5px);
 }
 .card__uno{
 grid-column: 1/2;
@@ -207,62 +167,11 @@ background-image: linear-gradient(to right, gold, white);
     top: 0;
     left: 0;
 }
-footer{
-    background-color: gold;
-    display: grid;
-    margin: 20px;
-    padding: 24px;
-    grid-template-areas: "indice mapa redes"
-                         "indice mapa none";
-}
-.footer__indice ul li{
-
-    font-size: 20px;
-    grid-area: indice ;
-    padding-bottom: 12px;
-
-}
-.footer__mapa{
-    grid-area: mapa;
-   
-}
 
 
 a{
     text-decoration: none;
     color: black;
-}
-.footer__texto{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: large;
-    margin: 20px;
-    padding: 20px;
-}
-
-.footer__contacto{
-text-align: center;
-}
-.footer__imagen{
-    width: 1200px;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
-    
-}
-.footer__iconos{
-width: 30px;
-height: 30px;
-margin: 12px;
-
-}
-.footer__redes{
-    grid-area: redes;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    
-
 }
 
 
@@ -338,311 +247,25 @@ button:hover{
     padding: 10px;
     background-image: url(/Resourses/jonathan-borba-zfPOelmDc-M-unsplash.jpg)
 }
+.section__uno{
+    margin: 20px;
+    padding: 60px;
+}
+
 .section__img{
-    display: flex;
+    
+    width: 300px;
     height: 250px;
-    display: inline;
     justify-content: space-between;
-    border-radius: 10px;
-    border: 1px solid black;
+    border-radius: 15px;
+    border: black solid 2px;
     margin: 30px;
-    padding: 5px;
-   
+    
     }
     .carrousel__altura{
       height: 500px;
     }
 
-/* MEDIA DE CELULAR */
-@media (min-width: 320px) and (max-width: 575px){
-    /* FOOTER */
 
-
-   
-    /* TARJETAS */
-
-    .main__tarjetas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 1fr 1fr 1fr;
-        gap: 15px;
-        margin: 15px;
-    }
-    .main__cards{
-    
-        border: grey solid 2px;
-        padding: 10px;
-        display: flex;
-        border-radius: 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .card__uno{
-    grid-column: 1/2;
-    grid-row: 1/2;
-    }
-    .card__dos{
-    grid-column: 1/2;
-    grid-row: 2/3;
-    }
-    .card__tres{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    }
-    .main__cards--img{
-        width: 300px;
-        height: 200px;
-    }
-    .section__uno{
-        margin: 10px;
-        padding: 20px;
-        width: 100%;
-        height: 100%;
-    }
-   
-    .section__img{
-        display: flex;
-        width: 200px;
-        height: 150px;
-        justify-content: space-between;
-        border-radius: 15px;
-        border: black solid 2px;
-        }
-
-        .main__tarjetas{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-row: 1fr;
-            gap: 15px;
-            margin: 20px;
-
-        }
-        .main__cards--img{
-            width: 250px;
-            height: 200px;
-        }
-        .main__principal{
-            display: grid;
-            background-image: url(../Resourses/jonathan-borba-zfPOelmDc-M-unsplash.png);
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: 1fr 1fr ;
-        
-        }
-        .main__titulo{
-        
-            color: white;
-            text-shadow: 2px 2px 4px black;
-            font-size: 30px;
-            text-align: center;
-            display: flex;
-          
-        
-        
-        }
-        .main__cards{
-
-            border: black solid 2px;
-            padding: 10px;
-            display: flex;
-            border-radius: 10px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .card{
-            width: 300px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 2px solid black ;
-            border-radius: 15px;
-            margin: 20px;
-            padding: 20px;
-            }
-            .imagen__principal{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-             
-            }
-       
-            .section__imagen{
-           
-            width: 100%;
-            padding: 10px;
-            margin: 10px;
-             
-            }
-            .img__sobremi{
-            width: 300px;
-            display: flex;
-            flex-wrap: wrap;
-            padding: 10px;
-            margin: 10px;
-         
-
-}
-footer{
-        
-    padding: 10px;
-    grid-template-areas: "indice"
-                         "mapa" 
-                         "redes"
-                         "none";
-}
-.footer__indice ul li{
-    font-size: 15px;
-    display: flex;
-}
-
-     
-       
-        
-    
-
-}
-/* MEDIA DE TABLET */
-@media (min-width: 576px) and (max-width: 992px){
-    .main__tarjetas{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-row: 1fr 1fr 1fr;
-        gap: 15px;
-        margin: 15px;
-    }
-    .main__cards{
-    
-        border: grey solid 2px;
-        padding: 10px;
-        display: flex;
-        border-radius: 10px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .card__uno{
-    grid-column: 1/2;
-    }
-    .card__dos{
-    grid-column: 1/2;
-    }
-    .card__tres{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    }
-    .main__cards--img{
-        width: 300px;
-        height: 200px;
-    }
-    .section__uno{
-        display: inline;
-        margin: 10px;
-        padding: 20px;
-
-    }
-   
-    .section__img{
-        display: flex;
-        width: 80%;
-        justify-content: space-between;
-        border-radius: 15px;
-        border: black solid 2px;
-        margin: 50px;
-        
-      
-        }
-
-        .main__tarjetas{
-        display: inline;
-       }
-        .main__cards--img{
-            width: 250px;
-            height: 200px;
-        }
-        .main__principal{
-            display: grid;
-            background-image: url(../Resourses/jonathan-borba-zfPOelmDc-M-unsplash.png);
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-            grid-template-columns: 1fr 2fr 1fr;
-            grid-template-rows: 1fr 1fr ;
-        
-        }
-        .main__titulo{
-        
-            color: white;
-            text-shadow: 2px 2px 4px black;
-            font-size: 30px;
-            text-align: center;
-            display: flex;
-          
-        
-        
-        }
-        .main__cards{
-
-            border: black solid 2px;
-            padding: 10px;
-            display: flex;
-            border-radius: 10px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            
-        }
-        .card{
-            width: 300px;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            border: 2px solid black ;
-            border-radius: 15px;
-            margin: 20px;
-            padding: 20px;
-            }
-            .imagen__principal{
-                width: 100%;
-                display: flex;
-                justify-content: center;
-             
-            }
-       
-            .section__imagen{
-           
-            width: 100%;
-            padding: 10px;
-            margin: 10px;
-             
-            }
-            .img__sobremi{
-            width: 560px;
-            display: flex;
-            margin: 10px;
- 
-}
-footer{
-        
-    padding: 10px;
-    grid-template-areas: "indice"
-                         "mapa" 
-                         "redes"
-                         "none";
-}
-.footer__indice ul li{
-    font-size: 15px;
-    display: flex;
-}
-
-}
 
     

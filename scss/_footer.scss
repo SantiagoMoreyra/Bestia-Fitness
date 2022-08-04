@@ -1,0 +1,55 @@
+footer{
+    background-color: gold;
+    display: grid;
+    margin: 20px;
+    padding: 24px;
+    grid-template-areas: "indice mapa redes"
+                         "indice mapa none";
+    margin: 20px;
+    padding: 24px;
+.footer{
+
+&__indice ul li{
+
+font-size: 20px;
+grid-area: indice ;
+padding-bottom: 12px;
+                        
+}
+&__mapa{
+grid-area: mapa;
+                           
+}
+                        
+&__texto{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+font-size: large;
+margin: 20px;
+padding: 20px;
+}
+                        
+&__contacto{
+text-align: center;
+}
+&__imagen{
+width: 1200px;
+height: auto;
+margin: 10px;
+padding: 10px;
+}
+&__iconos{
+width: 30px;
+height: 30px;
+margin: 12px;
+                        
+}
+&__redes{
+grid-area: redes;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}              
+}         
+                         
+}
