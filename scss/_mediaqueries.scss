@@ -1,4 +1,20 @@
 @media (min-width: 320px) and (max-width: 575px) {
+  
+  h1{
+    text-align: center;
+  }
+
+  .main__boton{
+    grid-column:2/3 ;
+    grid-row:2/3 ;
+    display: flex;
+    justify-content: center;
+}
+  .main__boton button{
+    height: 50px;
+    width: 300px;
+    
+}
     .main__tarjetas {
       display: grid;
       grid-template-columns: 1fr;
@@ -54,12 +70,15 @@
       background-position: center;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-rows: 1fr 1fr; }
+
     .main__titulo {
       color: white;
       text-shadow: 2px 2px 4px black;
       font-size: 30px;
-      text-align: center;
-      display: flex; }
+      display: flex;
+      justify-content: center;
+    
+    }
     .main__cards {
       border: black solid 2px;
       padding: 10px;
